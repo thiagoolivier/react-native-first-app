@@ -72,11 +72,11 @@ export default function App() {
         </View>
       )}
 
-      <StatusBar style="auto" />
-
       <EmojiPicker isVisible={isModalVisible} onClose={onModalClose}>
         <EmojiList onSelect={setPickedEmoji} onCloseModal={onModalClose} />
       </EmojiPicker>
+
+      <StatusBar style="auto" />
 
     </View>
   );
